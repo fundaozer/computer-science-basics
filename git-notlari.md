@@ -97,7 +97,7 @@ git diff main feature  # main ve feature branchleri arasındaki farkları göste
 
 ## Rebase 
 ```bash
-git rebase             # git 'in bir dalındaki değişiklikleri başka bir dala entegre eder  
+git rebase             # git'in bir dalındaki değişiklikleri başka bir dala entegre eder  
 ```
 Örnek : feature dalının içindeyken git rebase main dersek feature dalındaki değişiklikler main dalının ucuna sıralanır ve düzenli bir görünüm oluşur 
 ```bash
