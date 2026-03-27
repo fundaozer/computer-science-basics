@@ -39,6 +39,8 @@ git commit -a -m "message" # git'e tanıtılmış tüm dosyalardaki değişiklik
 
 git log # projenin tüm commit geçmişini listeler 
 
+git restore dosya_ismi #
+
 .gitignore # bu dosyanın içine kodlarımızı githuba veya başka bir platforma attığımızda başka insanlara görünmesini istemediğimiz dosyaları koyarız mesela bir gizli.txt dosyası içinde apı key bulunduruyorsak .gitignore dosyasının içine gizli.txt yazarız ki apı key gizli kalsın 
 
 ## Git Branch 
@@ -47,6 +49,9 @@ Branch , Git'in temel parçasıdır ve kod tabanındaki değişikleri yönetmek 
 
 head  # projede  mevcut dalı (branch) gösteren bir işaretçidir (pointer)
 merge  # projede dalları (branch) birleştiren yapı
+switch  # dallar arasında gezinmeyi sağlar 
+stash  # commit edilmeye hazır olmayan kısımları saklamaya yarayan yapı
+pop  # stash içinde sakladığımız yapıyı geri getiren yapı
 
 Terminalde
 
@@ -62,6 +67,15 @@ git merge branch_ismi  # dalları birleştirir
 Örnek:   diyelim ki projenin başında ana branch main sonra yeni branch olarak feature oluşturduk.Bu iki dalı birleştirmek için main dalına geri döneriz ve feature ile birleştiririz
       -  git switch main
       -  git merge feature 
+
+git stash  # 
+git stash list  #
+
+git stash pop  #
+
+git stash apply  #
+git stash clear #
+
 
 
 
